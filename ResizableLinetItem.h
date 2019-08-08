@@ -17,7 +17,7 @@
 #include "cornergrabber.h"
 #include "MyRandom.h"
 
-// Custom line item with to handles to resize for.
+// Custom line item with handles to resize for.
 class ResizableLinetItem : public QGraphicsLineItem
 {
 	using base = QGraphicsLineItem;
