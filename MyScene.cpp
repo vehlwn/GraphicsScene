@@ -71,8 +71,8 @@ void MyScene::mousePressEvent(QGraphicsSceneMouseEvent *event)
 				else
 				{
 					// We are too far from startPos.
-					// Make the fictitious point real to change it in mouseMove
-					// and push_back new fictitious point.
+					// Make the fictitious point real and push_back new 
+					// fictitious point.
 					m_poly.push_back(event->scenePos() - m_startPos);
 					itemToDraw->setPolygon(m_poly);
 				}
