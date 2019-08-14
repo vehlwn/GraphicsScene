@@ -13,7 +13,7 @@ public:
 	static std::mt19937 gen;
 
 	template<typename T>
-	static std::enable_if_t<std::is_integral<T>::value, T>
+	static std::enable_if_t<std::is_integral_v<T>, T>
 		next(T a, T b)
 	{
 		std::uniform_int_distribution<T> dist(a, b);
@@ -21,7 +21,7 @@ public:
 	}
 
 	template<typename T>
-	static std::enable_if_t<std::is_floating_point<T>::value, T>
+	static std::enable_if_t<std::is_floating_point_v<T>, T>
 		next(T a, T b)
 	{
 		std::uniform_real_distribution<T> dist(a, b);
